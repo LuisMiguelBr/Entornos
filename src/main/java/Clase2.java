@@ -1,8 +1,13 @@
+import java.util.Scanner;
+
 public class Clase2 {
     public static void main(String [] args){
+        Scanner sc = new Scanner(System.in);
         Usuario u1 = new Usuario("MechaCristo","1234");
         Usuario u2 = new Usuario();
-        System.out.println(u2);
+        String nom = "";
+        String pas = "";
+        //System.out.println(u2);
         Usuario[] usuarios = new Usuario[2];
         usuarios[0] = u1;
         usuarios[1] = u2;
@@ -15,7 +20,20 @@ public class Clase2 {
         // Si no te pregunto hasta 2 veces por la contraseña como maximo
         // Si tras esos intentos no he conseguido acertar, entonces finalizara el programa diciendo
         // Alerta Hackerman!
+
+
+        System.out.println("Usuario:");
+
+        do{
+            nom = sc.nextLine();
+
+        }while(!nom.equals(usuarios[0]));
+
+
+
     }
+
+
 
 
 
