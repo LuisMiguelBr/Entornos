@@ -3,7 +3,7 @@ import java.io.InputStream;
 import java.nio.charset.StandardCharsets;
 import java.util.Scanner;
 
-public class Main {
+public class Clase1 {
     public static void main(String[] args){
         //Scanner sc = new Scanner(System.in);
         String pass = "1234";
