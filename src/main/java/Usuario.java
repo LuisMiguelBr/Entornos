@@ -28,4 +28,9 @@ public class Usuario {
     }
 
 
+    @Override
+    public String toString(){
+        return "Mi nombre es " + nombre + " y mi pass es " + pass;
+    }
+
 }
