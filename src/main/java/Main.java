@@ -7,7 +7,7 @@ public class Main {
     public static void main(String[] args){
         //Scanner sc = new Scanner(System.in);
         String pass = "1234";
-        String fakeInput = "1111\n2222"; //\n1234";
+        String fakeInput = "1111\n2222\n1234";
         InputStream inputStream = new ByteArrayInputStream(fakeInput.getBytes());
         Scanner sc = new Scanner(inputStream);
 
