@@ -4,13 +4,13 @@ public class Clase2 {
     public static void main(String [] args){
         Scanner sc = new Scanner(System.in);
         Usuario u1 = new Usuario("MechaCristo","1234");
-        Usuario u2 = new Usuario();
+        //Usuario u2 = new Usuario();
         String nom = "";
         String pas = "";
         //System.out.println(u2);
-        Usuario[] usuarios = new Usuario[2];
+        Usuario[] usuarios = new Usuario[1];
         usuarios[0] = u1;
-        usuarios[1] = u2;
+        //usuarios[1] = u2;
 
         // Pedir inciar sesion a un usuario
         // Primero hay que comprobar el nombre
@@ -22,12 +22,13 @@ public class Clase2 {
         // Alerta Hackerman!
 
 
-        System.out.println("Usuario:");
 
         do{
+            System.out.println("Usuario:");
             nom = sc.nextLine();
+        }while(!usuarios[0].getNombre().equals(nom));
 
-        }while(!nom.equals(usuarios[0]));
+
 
 
 

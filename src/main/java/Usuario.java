@@ -33,4 +33,11 @@ public class Usuario {
         return "Mi nombre es " + nombre + " y mi pass es " + pass;
     }
 
+    public String getNombre(){
+        return nombre;
+
+    }
+    public void setNombre(String nombre){
+        this.nombre=nombre;
+    }
 }
